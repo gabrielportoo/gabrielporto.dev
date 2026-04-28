@@ -12,7 +12,7 @@ export const projects: Project[] = [
     title: "Depósito Barra",
     description: "Sistema completo de gestão de estoque e fornecedores para o negócio da família. Possui autenticação robusta utilizando JWT e permite controle e auditoria das entradas e saídas do estoque de forma simples e responsiva.",
     tech: ["React", "Node.js", "PostgreSQL"],
-    images: [] // Aqui você pode colocar URLs das imagens no futuro
+    images: []
   },
   {
     id: "inncommand-hotel",
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     title: "Clone Spotify",
     description: "Réplica funcional da interface principal do player de música mais famoso do mundo. Inclui listagem de artistas, controle de play/pause da música e um design fiel à aplicação original.",
     tech: ["React", "Vite", "MongoDB"],
-    images: []
+    images: ["../../public/clone-spotify_capa.png", "../../public/clone-spotify_artista.png", "../../public/clone-spotify_musica.png"]
   },
   {
     id: "frogdash",
