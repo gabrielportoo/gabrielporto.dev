@@ -33,6 +33,6 @@ export const projects: Project[] = [
     title: "FrogDash",
     description: "Jogo de plataforma 2D com fases desafiadoras, obstáculos variados e um level design pensado para reter a atenção do jogador. O projeto foi desenvolvido como trabalho acadêmico de Computação Gráfica na UFC.",
     tech: ["Unity", "C#", "ShaderLab"],
-    images: []
+    images: ["../../public/frogdash_capa.png", "../../public/frogdash-fase1.png", "../../public/frogdash-fase2.png"]
   }
 ];

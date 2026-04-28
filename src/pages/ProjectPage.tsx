@@ -43,7 +43,7 @@ export function ProjectPage() {
         </div>
       </header>
 
-      {hasImages ? (
+      {hasImages && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {project.images.slice(0, 3).map((imgUrl, i) => (
             <div key={i} className="aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-800">
@@ -51,30 +51,6 @@ export function ProjectPage() {
             </div>
           ))}
         </div>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {/* Placeholders, can be removed entirely if you prefer NO placeholders. 
-              The user requested "se eu não colocar ou não indicar as imagens, deixe somente o texto".
-              So I will just NOT render placeholders. The condition will be entirely skipped!
-           */}
-        </div>
-      )}
-
-      {/* Since the user specifically asked "se eu não colocar... deixe somente o texto", 
-          I will completely hide the grid if there are no images. */}
-
-      {hasImages && (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-           {project.images.map((img, i) => (
-              <div key={i} className="aspect-video bg-slate-800 rounded-xl overflow-hidden">
-                <img src={img} alt="" className="w-full h-full object-cover" />
-              </div>
-           ))}
-        </div>
-      )}
-
-      {!hasImages && (
-         <div className="hidden">No images grid</div>
       )}
 
       <div className="prose prose-invert prose-slate max-w-none">
