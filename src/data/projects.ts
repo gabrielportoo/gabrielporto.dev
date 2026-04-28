@@ -26,13 +26,13 @@ export const projects: Project[] = [
     title: "Clone Spotify",
     description: "Réplica funcional da interface principal do player de música mais famoso do mundo. Inclui listagem de artistas, controle de play/pause da música e um design fiel à aplicação original.",
     tech: ["React", "Vite", "MongoDB"],
-    images: ["../../public/clone-spotify_capa.png", "../../public/clone-spotify_artista.png", "../../public/clone-spotify_musica.png"]
+    images: ["/clone-spotify_capa.png", "/clone-spotify_artista.png", "/clone-spotify_musica.png"]
   },
   {
     id: "frogdash",
     title: "FrogDash",
     description: "Jogo de plataforma 2D com fases desafiadoras, obstáculos variados e um level design pensado para reter a atenção do jogador. O projeto foi desenvolvido como trabalho acadêmico de Computação Gráfica na UFC.",
     tech: ["Unity", "C#", "ShaderLab"],
-    images: ["../../public/frogdash_capa.png", "../../public/frogdash-fase1.png", "../../public/frogdash-fase2.png"]
+    images: ["/frogdash_capa.png", "/frogdash-fase1.png", "/frogdash-fase2.png"]
   }
 ];
